@@ -1,4 +1,4 @@
-.nav{
+.nav {
     position: fixed;
     width: 100%;
     padding: 20px 50px;
@@ -8,20 +8,20 @@
     border-top: 1px solid #f7f7f7;
 }
 
-.nav .nav__list{
+.nav .nav__list {
     display: flex;
     justify-content: space-between;
 }
 
-.nav i{
+.nav i {
     font-size: 20px;
 }
 
-.nav .nav__list-link{
+.nav .nav__list-link {
     position: relative;
 }
 
-.nav .nav__badge{
+.nav .nav__badge {
     position: absolute;
     top: -7px;
     right: -7px;
@@ -35,4 +35,20 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+
+@keyframes showNavBar {
+    from {
+        transform: translateY(80px);
+    }
+
+    to {
+        transform: none;
+    }
+}
+
+.nav {
+    transform: translateY(80px);
+    animation: showNavBar 0.5s ease-out forwards;
+    animation-delay: 0.5s;
 }
