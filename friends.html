@@ -9,47 +9,49 @@
     <script src="https://kit.fontawesome.com/f298cc142b.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div class="status-bar">
-        <div class="status-bar__column">
-            <span class="status-bar__clock">
-                13:54
-            </span>
+<body class="friends-body">
+    <div class="header-wrapper">
+        <div class="status-bar">
+            <div class="status-bar__column">
+                <span class="status-bar__clock">
+                    13:54
+                </span>
+            </div>
+            <div class="status-bar__column">
+                <i class="fas fa-clock"></i>
+                <i class="fas fa-volume-mute"></i>
+                <i class="fas fa-wifi"></i>
+                <span class="status-bar__battery-level">
+                    100%
+                </span>
+                <i class="fas fa-battery-full"></i>
+            </div>
         </div>
-        <div class="status-bar__column">
-            <i class="fas fa-clock"></i>
-            <i class="fas fa-volume-mute"></i>
-            <i class="fas fa-wifi"></i>
-            <span class="status-bar__battery-level">
-                100%
-            </span>
-            <i class="fas fa-battery-full"></i>
-        </div>
+        <header class="header">
+            <div class="header__header-column">
+                <h1 class="header__title">Friends</h1>
+            </div>
+            <div class="header__header-column">
+                <span class="header__icon">
+                    <i class="fas fa-search"></i>
+                </span>
+                <span class="header__icon">
+                    <i class="fas fa-cog"></i>
+                </span>
+            </div>
+        </header>
     </div>
-    <header class="header">
-        <div class="header__header-column">
-            <h1 class="header__title">Friends</h1>
-        </div>
-        <div class="header__header-column">
-            <span class="header__icon">
-                <i class="fas fa-search"></i>
-            </span>
-            <span class="header__icon">
-                <i class="fas fa-cog"></i>
-            </span>
-        </div>
-    </header>
     <main class="friends">
         <header class="friends__header">
             <div class="friends__friend friend">
                 <div class="friend__column">
-                    <img src="images/avatar.png" alt="" class="g-avatar friend__avatar">
+                    <img src="images/avatar01.png" alt="" class="g-avatar friend__avatar">
                     <div class="friend__content">
                         <span class="friend__name">
-                            Jeong
+                            목해원
                         </span>
                         <span class="friend__status">
-                            Hello!
+                            버드나무에 부는 바람🌿
                         </span>
                     </div>
                 </div>
@@ -60,33 +62,103 @@
             <h5 class="friends__title">Plus Friend</h5>
             <div class="friends__friend friend">
                 <div class="friend__column">
-                    <img src="images/avatar.png" class="friend__avatar">
+                    <img src="images/plus.png" class="friend__avatar">
                     <div class="friend__content">
                         <span class="friend__name">
                             Plus Friend
                         </span>
                     </div>
                 </div>
+                <div class="friend__column">
+                    <span class="friend-more">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </div>
             </div>
         </div>
         <ul class="friends__list">
-            <h5 class="friends__title">Friends 14</h5>
+            <h5 class="friends__title">Friends 6</h5>
             <li class="friends__friend friend friend--lg">
                 <div class="friend__column">
-                    <img src="images/avatar.png" alt="" class="friend__avatar">
+                    <img src="images/avatar03.png" alt="" class="friend__avatar">
                     <div class="friend__content">
                         <span class="friend__name">
-                            Jeong
+                            명여이모
                         </span>
                         <span class="friend__status">
-                            Hello!
+                            호두하우스
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="friends__friend friend friend--lg">
+                <div class="friend__column">
+                    <img src="images/avatar05.png" alt="" class="friend__avatar">
+                    <div class="friend__content">
+                        <span class="friend__name">
+                            수정이모
+                        </span>
+                        <span class="friend__status">
+                            호두파이는 맛있어!
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="friends__friend friend friend--lg">
+                <div class="friend__column">
+                    <img src="images/avatar06.png" alt="" class="friend__avatar">
+                    <div class="friend__content">
+                        <span class="friend__name">
+                            이장우
+                        </span>
+                        <span class="friend__status">
+                           혜천시청
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <li class="friends__friend friend friend--lg">
+                <div class="friend__column">
+                    <img src="images/avatar02.png" alt="" class="friend__avatar">
+                    <div class="friend__content">
+                        <span class="friend__name">
+                            임은섭
+                        </span>
+                        <span class="friend__status">
+                            Good Night Bookstore
                         </span>
                     </div>
                 </div>
                 <div class="friend__column">
                     <div class="friend__now-listening">
-                        <span>WANNABE - ITZY
+                        <span>겨울이 꾸는 꿈처럼 ...
                             <i class="fas fa-play fa-xs"></i>
+                        </span>
+                    </div>
+                </div>
+            </li>           
+            <li class="friends__friend friend friend--lg">
+                <div class="friend__column">
+                    <img src="images/avatar04.png" alt="" class="friend__avatar">
+                    <div class="friend__content">
+                        <span class="friend__name">
+                            정승호
+                        </span>
+                        <span class="friend__status">
+                            북현초2
+                        </span>
+                    </div>
+                </div>
+            </li>           
+            <li class="friends__friend friend friend--lg">
+                <div class="friend__column">
+                    <img src="images/avatar07.png" alt="" class="friend__avatar">
+                    <div class="friend__content">
+                        <span class="friend__name">
+                            지은실
+                        </span>
+                        <span class="friend__status">
+                            😍
                         </span>
                     </div>
                 </div>
@@ -99,6 +171,7 @@
                     <i class="fas fa-user"></i>
                 </a></li>
             <li class="nav__list-item"><a href="index.html" class="nav__list-link">
+                    <div class="nav__badge">8</div>
                     <i class="far fa-comment"></i>
                 </a></li>
             <li class="nav__list-item"><a href="find.html" class="nav__list-link">
@@ -113,6 +186,7 @@
         <span class="bigScreen__text">
             Please make your screen small!
         </span>
+        <span>👀</span>
     </div>
 </body>
 

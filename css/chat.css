@@ -1,11 +1,13 @@
-.header-wrapper {
-    position: fixed;
+.chat-body>.header-wrapper>.status-bar {
+    margin-bottom: 10px;
+}
+
+.chats-body>.header-wrapper {
     top: 0;
     width: 100%;
-    padding: 5px 0;
-    background-color: #fff;
+    margin-left: 0px;
     box-shadow: 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
-    z-index: 100;
+    background:url(../images/chatBg.png);
 }
 
 .chats-body {
@@ -13,10 +15,6 @@
     padding-top: 100px;
 }
 
-.chats-body .header,
-.chats-body .status-bar {
-    padding: 0 20px;
-}
 
 .chats-body {
     background: url(../images/chatBg.png);
@@ -37,12 +35,16 @@
 
 .chat__icon-left {
     position: absolute;
-    left: 10px;
+    left: 20px;
 }
 
 .chat__icon-right {
     position: absolute;
-    right: 10px;
+    right: 20px;
+}
+
+.chat__icon-right>span {
+    margin-left: 10px;
 }
 
 @keyframes float {
@@ -104,11 +106,11 @@
     flex-direction: column;
     align-items: center;
     padding: 0 20px;
-    padding-top: 30px;
+    padding-top: 35px;
 }
 
 .chat__messages .chat__timestamp {
-    background-color: rgb(247, 244, 83);
+    background-color: rgb(228, 228, 228);
     font-size: 12px;
     padding: 5px 10px;
     border-radius: 10px;
@@ -121,7 +123,6 @@
 .message {
     display: flex;
     align-items: flex-start;
-    width: 50%;
     margin-bottom: 20px;
 }
 
@@ -137,11 +138,12 @@
     align-self: flex-end;
 }
 
-@keyframes spin{
-    from{
+@keyframes spin {
+    from {
         transform: none;
     }
-    to{
+
+    to {
         transform: rotateY(1turn);
     }
 }
@@ -161,14 +163,14 @@
     border-radius: 20px;
     display: block;
     color: #fff;
-    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.5;
 
 }
 
 .incoming-message .message__author {
     margin-top: 10px;
     display: block;
-    font-weight: 600;
     font-size: 12px;
 }
 
@@ -179,7 +181,7 @@
 
 .sent-message .message__bubble {
     border-bottom-right-radius: 0px;
-    background-image: linear-gradient(to left, #ff5858, #f857a6);
+    background-image: linear-gradient(to left, #F7971E, rgb(240, 196, 3));
 }
 
 @keyframes incomingAnim {
@@ -210,6 +212,7 @@
     }
 }
 
-.sent-message{
+.sent-message {
     animation: sentAnimation 0.5s ease-out forwards;
 }
+
